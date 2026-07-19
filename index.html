@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Options Framework 2026 — a transparent, data-driven framework for assessing options trades." />
+  <meta property="og:title" content="Options Framework 2026" />
+  <meta property="og:description" content="A transparent, evidence-based framework for assessing options trades using accessible and verifiable data." />
+  <meta property="og:type" content="website" />
+  <title>Options Framework 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Options Framework home">
+        <span class="brand-mark">OF</span>
+        <span>Options Framework 2026</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#principles">Principles</a>
+        <a href="#stages">Framework</a>
+        <a href="#scoring">Scoring</a>
+        <a href="#output">Output</a>
+      </nav>
+      <button class="btn btn-secondary" id="shareButton" type="button">Share</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Data-driven options analysis</span>
+          <h1>A practical framework built around data that can actually be accessed.</h1>
+          <p class="hero-copy">
+            A transparent, reproducible method for assessing option trades using observable market data,
+            clearly disclosed assumptions and a consistent scoring system.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#stages">View the framework</a>
+            <button class="btn btn-ghost" id="printButton" type="button">Print or save as PDF</button>
+          </div>
+          <p class="disclaimer">For research and educational purposes only. Not financial advice.</p>
+        </div>
+
+        <aside class="score-card" aria-label="Recommendation bands">
+          <div class="score-card-header">
+            <span>Decision scale</span>
+            <strong>0–10</strong>
+          </div>
+          <div class="score-row no-go"><span>0–3</span><b>No-Go</b></div>
+          <div class="score-row hold"><span>4–6</span><b>Hold</b></div>
+          <div class="score-row caution"><span>7–8</span><b>Go with caution</b></div>
+          <div class="score-row strong"><span>9–10</span><b>Strong Go</b></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="principles">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Core principle</span>
+          <h2>Accessible, verifiable and reproducible data first.</h2>
+          <p>
+            Every metric should be obtainable, independently checked and capable of being reproduced.
+            Where a metric is unavailable, the framework uses a suitable proxy or excludes it from scoring.
+          </p>
+        </div>
+
+        <div class="card-grid four">
+          <article class="card"><span class="number">01</span><h3>Accessible</h3><p>Use data that can be obtained consistently from public or reliable market sources.</p></article>
+          <article class="card"><span class="number">02</span><h3>Verified</h3><p>Cross-check critical fields such as spot price, earnings and contract details.</p></article>
+          <article class="card"><span class="number">03</span><h3>Reproducible</h3><p>Another analyst using the same data should reach a broadly similar conclusion.</p></article>
+          <article class="card"><span class="number">04</span><h3>Transparent</h3><p>Disclose assumptions, unavailable fields, proxies and model limitations.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" id="stages">
+      <div class="container">
+        <div class="section-heading"><span class="eyebrow">The framework</span><h2>Eleven stages from data validation to final verdict.</h2></div>
+        <div class="timeline">
+          <article class="stage"><div class="stage-index">1</div><div class="stage-body"><h3>Market validation</h3><p>No analysis begins until the underlying and contract data have been checked.</p><div class="tag-list"><span>Spot price ×3 sources</span><span>Option chain</span><span>Bid / ask / mark</span><span>Volume</span><span>Open interest</span><span>Earnings</span><span>Dividends</span></div></div></article>
+          <article class="stage"><div class="stage-index">2</div><div class="stage-body"><h3>Mosh TA 2026</h3><p>Multi-timeframe technical review from weekly to one-hour charts.</p><div class="stage-columns"><div><b>Trend</b><span>EMA 9/21/50/200, SMA 50/200</span></div><div><b>Momentum</b><span>RSI, MACD, Slow Stochastic</span></div><div><b>Volatility</b><span>ATR(20)</span></div><div><b>Structure</b><span>Support, resistance, Fibonacci, trendlines</span></div><div><b>Volume</b><span>Relative volume and VWAP</span></div><div><b>Context</b><span>Sector, index, macro, earnings and dividends</span></div></div></div></article>
+          <article class="stage"><div class="stage-index">3</div><div class="stage-body"><h3>Option contract analysis</h3><p>Record the contract’s expiry, strike, Greeks and pricing components.</p><div class="tag-list"><span>DTE</span><span>Delta</span><span>Gamma</span><span>Theta</span><span>Vega</span><span>Rho</span><span>Intrinsic value</span><span>Extrinsic value</span></div></div></article>
+          <article class="stage"><div class="stage-index">4</div><div class="stage-body"><h3>Liquidity assessment</h3><p>Classify the contract as Tier A, B or C using volume, open interest and spread quality.</p><div class="tier-grid"><div><b>Tier A</b><span>High liquidity and tight execution</span></div><div><b>Tier B</b><span>Moderate liquidity</span></div><div><b>Tier C</b><span>Low liquidity and higher execution risk</span></div></div></div></article>
+          <article class="stage"><div class="stage-index">5</div><div class="stage-body"><h3>Volatility analysis</h3><p>Compare implied and historical volatility and calculate expected move.</p><div class="tag-list"><span>IV</span><span>HV</span><span>IV/HV ratio</span><span>Expected move</span><span>Daily expected move</span><span>Annualised move</span></div><p class="note">IV Rank and IV Percentile are supplementary, not mandatory.</p></div></article>
+          <article class="stage"><div class="stage-index">6</div><div class="stage-body"><h3>Fair value pricing</h3><p>Primary model: American option pricing using Crank–Nicolson finite differences, Projected Successive Over-Relaxation and discrete dividend adjustments.</p><div class="tag-list"><span>Market premium</span><span>Fair value</span><span>Difference</span><span>Underpriced</span><span>Fairly priced</span><span>Overpriced</span></div></div></article>
+          <article class="stage"><div class="stage-index">7</div><div class="stage-body"><h3>Risk metrics</h3><div class="stage-columns"><div><b>Breakeven</b><span>Price and percentage</span></div><div><b>ATR efficiency</b><span>Breakeven ÷ ATR</span></div><div><b>Pay-off</b><span>Maximum loss and maximum gain</span></div><div><b>Greek efficiency</b><span>Delta, theta and vega exposure</span></div><div><b>Move coverage</b><span>Expected move versus breakeven</span></div><div><b>Time risk</b><span>Decay profile and expiry pressure</span></div></div></div></article>
+          <article class="stage"><div class="stage-index">8</div><div class="stage-body"><h3>Event risk</h3><p>Assess foreseeable catalysts and classify total event risk as low, medium or high.</p><div class="tag-list"><span>Earnings</span><span>Dividends</span><span>FOMC</span><span>CPI / PPI</span><span>Company news</span><span>Sector events</span></div></div></article>
+          <article class="stage"><div class="stage-index">9</div><div class="stage-body"><h3>Decision engine</h3><p>The final score is derived from six weighted categories.</p><div class="score-bars"><div><span>Technical</span><i style="--w: 80%"></i></div><div><span>Liquidity</span><i style="--w: 90%"></i></div><div><span>Volatility</span><i style="--w: 75%"></i></div><div><span>Pricing</span><i style="--w: 85%"></i></div><div><span>Risk</span><i style="--w: 88%"></i></div><div><span>Timing</span><i style="--w: 78%"></i></div></div></div></article>
+          <article class="stage" id="scoring"><div class="stage-index">10</div><div class="stage-body"><h3>Recommendation scale</h3><div class="recommendation-grid"><div class="rec no-go"><strong>0–3</strong><span>No-Go</span></div><div class="rec hold"><strong>4–6</strong><span>Hold</span></div><div class="rec caution"><strong>7–8</strong><span>Go with caution</span></div><div class="rec strong"><strong>9–10</strong><span>Strong Go</span></div></div></div></article>
+          <article class="stage" id="output"><div class="stage-index">11</div><div class="stage-body"><h3>Required output</h3><ol class="output-list"><li>Three-line executive summary</li><li>Live market-data validation</li><li>Mosh TA 2026 technical analysis</li><li>Option contract details</li><li>Liquidity assessment</li><li>Volatility analysis</li><li>Fair-value pricing</li><li>Risk metrics</li><li>Event-risk review</li><li>Weighted score</li><li>Final recommendation</li><li>Key supporting reasons</li><li>Risks that could invalidate the trade</li></ol></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section"><div class="container"><div class="cta"><div><span class="eyebrow">Designed for consistency</span><h2>Evidence-led. Transparent. Practical.</h2><p>The same process can be applied across optionable securities without relying on inaccessible proprietary metrics.</p></div><button class="btn btn-primary" id="copyLinkButton" type="button">Copy page link</button></div></div></section>
+  </main>
+
+  <footer><div class="container footer-wrap"><p>Options Framework 2026</p><p>Research and educational use only. Options involve substantial risk.</p></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
